@@ -1,19 +1,18 @@
 ---
 import '../styles/global.css';
-
-
 import Navigation from './components/Navigation.astro';
-import Footer from './components/Footer.astro'
-
+import Footer from './components/Footer.astro';
+const title = "Pagina de Inicio";
+const myperson = "Soy Julio Peña"
 ---
 
 <html lang="en">
-  <head>
+  <head>  
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{title}</title>
   </head>
   <body>
     <!--Remplazo de la Barra de navegacion por el Importe -->
@@ -23,9 +22,9 @@ import Footer from './components/Footer.astro'
 
     <h1>Pagina Astro</h1>
 	<h2>bienvenidos a mi pagina</h2>
-  <h3>Soy Julio Peña</h3>
+  <h3>{myperson}</h3>
   </body>
-  <footer>
+
     <Footer/>
-  </footer>
+
 </html>
