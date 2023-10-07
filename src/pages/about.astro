@@ -2,7 +2,7 @@
 //importaciones
 import '../styles/global.css';
 import Footer from './components/Footer.astro';
-import Navigation from './components/Navigation.astro';
+import Header from './components/header.astro';
 
 const pageTitle = "Sobre mi";
 const identity = {
@@ -56,7 +56,9 @@ const textCase = "sans-serif";
   </head>
   <body>
     
-    <Navigation/>
+
+    <Header/>
+
       <h1>{pageTitle}</h1>
       <h2>... ¡y mi nuevo sitio Astro!</h2>
     </nav>
